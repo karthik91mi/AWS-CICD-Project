@@ -21,7 +21,7 @@ phases:
       - echo "Running tests..."
       - echo "Building Docker image..."
       - export DOCKER_REGISTRY_URL="hub.docker.com"
-      - echo "Karthik91@" | docker login -u "karthik9100" --password-stdin "$DOCKER_REGISTRY_URL"
+      - echo "Keerthi91@" | docker login -u "karthik9100" --password-stdin "$DOCKER_REGISTRY_URL"
       - docker build -t "$DOCKER_REGISTRY_URL/karthik9100/hotel-app:latest" .
       - docker push "$DOCKER_REGISTRY_URL/karthik9100/hotel-app:latest"
 
